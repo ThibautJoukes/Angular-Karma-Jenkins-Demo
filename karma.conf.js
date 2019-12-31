@@ -27,11 +27,12 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['PhantomJS'],
+    browsers: ['Chrome','PhantomJS'],
     singleRun: true,
     restartOnFileChange: true,
     junitReporter: {
-      outputDir: './test-results'
+      outputDir: './test-results',
+      outputFile: 'TESTS-TestSuite.xml'
     }
   });
 };
