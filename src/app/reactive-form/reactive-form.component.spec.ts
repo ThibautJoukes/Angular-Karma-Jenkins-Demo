@@ -20,11 +20,4 @@ describe('ReactiveFormComponent', () => {
       ]
     }).compileComponents();
   }));
-
-  it("firstname should be thibaut", () => {
-    const fixture = TestBed.createComponent(ReactiveFormComponent);
-    const comp = fixture.debugElement.componentInstance;
-    expect(comp.profileForm.firstname).toEqual("thibaut");
-  })
-
 });
