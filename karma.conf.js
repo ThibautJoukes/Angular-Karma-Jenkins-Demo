@@ -29,7 +29,7 @@ module.exports = function (config) {
     singleRun: true,
     restartOnFileChange: true,
     junitReporter: {
-      outputFile: 'test-results.xml'
+      outputDir: './test-results'
     }
   });
 };
