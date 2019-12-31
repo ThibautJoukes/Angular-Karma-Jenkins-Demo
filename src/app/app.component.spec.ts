@@ -1,12 +1,25 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HighlightDirective } from './directives/highlight.directive';
+import { ValidatePasswordDirective } from './directives/validate-password.directive';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        ReactiveFormComponent,
+        HighlightDirective,
+        ValidatePasswordDirective
       ],
+      imports: [
+        BrowserModule,
+        FormsModule,
+        ReactiveFormsModule
+      ]
     }).compileComponents();
   }));
 
@@ -20,12 +33,5 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app.title).toEqual('tipsTricks');
-  });
-
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('tipsTricks app is running!');
   });
 });
