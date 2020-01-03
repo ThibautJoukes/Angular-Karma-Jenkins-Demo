@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { HighlightDirective } from './directives/highlight.directive';
 import { ValidatePasswordDirective } from './directives/validate-password.directive';
+import { ViewChildrenComponent } from './view-children/view-children.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ReactiveFormComponent,
     HighlightDirective,
-    ValidatePasswordDirective
+    ValidatePasswordDirective,
+    ViewChildrenComponent
   ],
   imports: [
     BrowserModule,

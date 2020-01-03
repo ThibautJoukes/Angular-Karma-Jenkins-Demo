@@ -1,0 +1,7 @@
+<p id="1" #paragraph *ngIf="shouldShow">paragraph 1...</p>
+<p id="2" #paragraph *ngIf="!shouldShow">paragraph 2...</p>
+
+<button (click)="toggle()">Toggle</button>
+<button (click)="buttonEvent()">Eventcall</button>
+
+<div>Selected: {{ selectedPane }}</div>

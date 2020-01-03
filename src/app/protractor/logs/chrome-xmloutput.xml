@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Protractor Demo App" timestamp="2020-01-03T15:31:23" hostname="localhost" time="6.27" errors="0" tests="4" skipped="0" failures="0">
+  <testcase classname="Protractor Demo App" name="should have a title" time="0.469">
+  </testcase>
+  <testcase classname="Protractor Demo App" name="should add one and two" time="2.869">
+  </testcase>
+  <testcase classname="Protractor Demo App" name="should add four and six" time="2.544">
+  </testcase>
+  <testcase classname="Protractor Demo App" name="should read the value from an input" time="0.387">
+  </testcase>
+ </testsuite>
+</testsuites>

@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tipsTricks';
+
+
+  ngAfterViewChecked() {
+    console.log("--- Change detection triggered ---");
+    
+  }
 }
